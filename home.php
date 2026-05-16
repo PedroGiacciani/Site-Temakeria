@@ -10,14 +10,16 @@
     <script src="https://kit.fontawesome.com/52ff4c741b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <?php include("menu.php"); ?>
-    </header>
-    <main>
-
-    </main>
+    <div id="separador">
+        <header>
+            <?php include("menu.php"); ?>
+        </header>
+        <main>
+            
+        </main>
+    </div>
     <footer>
-        
+        <?php include("rodape.php"); ?>
     </footer>
 </body>
 </html>
