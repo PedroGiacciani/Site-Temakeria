@@ -1,0 +1,269 @@
+/* Container e imagens do Grid, Igor é gay só pra constar */
+
+
+/* ==========================================================================
+   SEÇÃO DO FEED DA BIA (ADICIONADO POR LÉO - GRID RESPONSIVO)
+   ========================================================================== */
+
+/* O Container principal usando o mesmo motor do feed da Fenda */
+.container-feed-temakeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limita no PC para não esticar infinito */
+    margin: 30px auto;
+    padding: 0 15px;
+    
+}
+
+/* O Card de Produto */
+.card-produto-japa {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    container-name: cardProduto;
+    container-type: inline-size; /* Faz ele escutar a largura (width) */
+}
+
+.card-produto-japa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(187, 31, 32, 0.15); /* Brilho sutil na cor1 */
+}
+
+/* Imagem e Badge */
+.foto-produto-japa {
+    position: relative;
+    width: 100%;
+    height: 180px; /* Altura padrão para celular/cards menores */
+    transition: height 0.3s ease;
+}
+
+
+/* A foto em si*/
+.foto-produto-japa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==========================================================================
+   REGRAS DE @CONTAINER (Mágica de redimensionamento interno)
+   ========================================================================== */
+
+/* Se o card ganhar espaço e ficar maior que 350px de largura */
+@container cardProduto (min-width: 350px) {
+    .foto-produto-japa {
+        height: 220px; /* Aumenta a foto proporcionalmente */
+    }
+    .info-produto-japa h3 {
+        font-size: 1.4rem; /* Texto do título cresce de forma elegante */
+    }
+    .info-produto-japa p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Se o card ficar gigante (ex: o grid distribuiu apenas 1 ou 2 colunas em tela larga) */
+@container cardProduto (min-width: 500px) {
+    .foto-produto-japa {
+        height: 280px; 
+    }
+    .info-produto-japa h3 {
+        font-size: 1.6rem;
+    }
+}
+
+
+.badge-tag-japa {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: var(--cor1); /* Vermelho Japa */
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(187, 31, 32, 0.4);
+}
+
+/* Corpo de Informações */
+.info-produto-japa {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.info-produto-japa h3 {
+    color: var(--cor2); /* Grafite escuro */
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.info-produto-japa p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Garante que o rodapé alinhe mesmo com textos de tamanhos diferentes */
+}
+
+/* Rodapé do Card (Preço e Botão) */
+.footer-card-japa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.preco-japa {
+    color: var(--cor2);
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.btn-add-japa {
+    background-color: var(--cor1);
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-add-japa:hover {
+    background-color: #a11818; /* Vermelho um tom mais escuro */
+    transform: scale(1.1);
+}
+
+/* ==========================================================================
+   BARRA DE FILTROS (ROLAGEM HORIZONTAL NO MOBILE)
+   ========================================================================== */
+.filtros-cardapio-japa {
+    display: flex;
+    justify-content: flex-start; /* Alinha na esquerda no celular para scroll */
+    gap: 12px;
+    padding: 15px;
+    overflow-x: auto; /* Ativa a gavetinha de scroll horizontal no celular */
+    scrollbar-width: none; /* Esconde a barra feia no Firefox */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Esconde a barra de rolagem no Chrome/Safari/Edge */
+.filtros-cardapio-japa::-webkit-scrollbar {
+    display: none;
+}
+
+/* Botão de Filtro Base */
+.btn-filtro-japa {
+    background-color: #ffffff;
+    color: var(--cor2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: var(--fonte1);
+    font-weight: 700;
+    font-size: 0.9rem;
+    white-space: nowrap; /* Impede o texto de quebrar linha */
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+}
+
+
+/* Estado Ativo e Hover do Filtro */
+.btn-filtro-japa.ativo,
+.btn-filtro-japa:hover {
+    background-color: var(--cor1);
+    color: #ffffff;
+    border-color: var(--cor1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(187, 31, 32, 0.3);
+}
+
+/* Centraliza os filtros em telas maiores (Tablets e PC) */
+@media (min-width: 768px) {
+    .filtros-cardapio-japa {
+        justify-content: center;
+        overflow: visible;
+    }
+}
+
+/* ==========================================================================
+   AJUSTE CIRÚRGICO DE LARGURA E FILTROS EM LANDSCAPE (CELULARES DEITADOS)
+   ========================================================================== */
+@media screen and (orientation: landscape) and (max-width: 950px) {
+    
+    /* 1. Remove o travamento de altura do Pedro para permitir o scroll vertical suave */
+  
+
+    /* 2. Destrava a caixinha do Pedro para ocupar 100% da largura física da tela deitada */
+    #separador {
+        width: 100% ;
+        max-width: 100vw ;
+        display: block ;
+    }
+
+    /* 3. Garante que a área do conteúdo ocupe toda a horizontal disponível */
+    main {
+        width: 100% !important;
+        max-width: 100vw !important;
+        padding: 0 10px ;
+    }
+
+    /* 4. A MÁGICA DOS FILTROS: Em telas deitadas menores, mantém o scroll lateral 
+          mas força o container a ir até a borda, matando o buraco lateral*/
+    .filtros-cardapio-japa {
+        display: flex ;
+        justify-content: flex-start ; /* Mantém o carrossel de botões ativo */
+        overflow-x: auto !important;            /* Devolve o scroll horizontal macio */
+        width: 100% ;
+        padding: 15px 10px ;
+    }
+}
+
+
+/* A Gaveta nasce escondida de fábrica */
+.gaveta-cardapio-japa {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    width: 100%;
+}
+
+/* Quando o usuário clicar no menu, o JS adiciona essa classe que ativa o display */
+.gaveta-cardapio-japa.mostrar {
+    display: block;
+    opacity: 1;
+}
+
+/* Quando a tela for larga (celular deitado ou tablet) */
+@media screen and (min-width: 600px) {
+    .filtros-cardapio-japa {
+        justify-content: center; /* Joga os botões para o meio e mata o vazio da direita */
+        overflow-x: visible;     /* Não precisa mais de scroll */
+    }
+}
+
+/* Força a div estrutural a se espalhar por completo na horizontal */
+#separador {
+    width: 100%;
+    max-width: 100vw;
+}
