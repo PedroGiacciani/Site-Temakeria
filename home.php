@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temakeria da Bia</title>
     <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="estilos/feed.css">
 
     <!--Script do fontAwesome para adicionar icones-->
     <script src="https://kit.fontawesome.com/52ff4c741b.js" crossorigin="anonymous"></script>
@@ -15,7 +16,7 @@
             <?php include("menu.php"); ?>
         </header>
         <main>
-            
+           <?php include("cardapio.php"); ?>
         </main>
     </div>
     <footer>

@@ -18,13 +18,18 @@
     --fonte1: Inter, Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth; /* DESLIZAMENTO SUAVE */
+}
+
 body{
     background-color: var(--cor3);
     font-family: var(--fonte1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: auto !important;
+    min-height: 100vh;
 }
 
 header{
@@ -78,6 +83,7 @@ header > nav > ul#lista-menu > li > a{
 header > nav > ul#lista-menu > li > a:hover{
     background-color: rgba(0, 0, 0, 0.397);
     color: rgba(255, 255, 255, 0.719);
+    transform: ease 0.2s;
 }
 
 footer{
@@ -87,6 +93,7 @@ footer{
     border-radius: 5px 5px 0px 0px;
     background-color: var(--cor1);
     color: var(--cor2);
+    flex-shrink: 0;
 }
 
 footer > p > a{
@@ -102,6 +109,11 @@ footer > p > a:hover{
 }
 
 
-/* Container e imagens do Grid */
+/* Garante que o main use todo o espaço liberado */
+main {
+    width: 100% !important;
+    max-width: 1200px; 
+    margin: 0 auto !important;
+}
 
-/* Alguma coisa qualquer, o Igor é gay só pra constar*/
+
