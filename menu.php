@@ -1,4 +1,12 @@
-<img src="midias/logo-temakeria-bia.jpg" alt="Logo Temakeria da Bia">
+<style>
+    img{
+        border-radius: 50%;
+        border: 3px solid #BB1F20;
+        outline: 6px solid #1C1A1B;
+    }
+</style>
+
+<a href="home.php"><img src="midias/logo-temakeria-bia.jpg" alt="Logo Temakeria da Bia"></a>
 <h1>Temakeria da Bia</h1>
 <nav id="menu">
     <i class="fa-solid fa-angle-down" onclick="toggleMenu()" id="icon"></i>
@@ -6,7 +14,7 @@
         <li><a href="#cardapio-ancora" onclick="mostrarCardapio()">Nossos produtos</a></li>
         <li><a href="#">Seus pedidos</a></li>
         <li><a href="#">Sua conta</a></li>
-        <li><a href="#">Configurações</a></li>
+        <li><a href="#">Sobre nós</a></li>
     </ul>
 </nav>
 
