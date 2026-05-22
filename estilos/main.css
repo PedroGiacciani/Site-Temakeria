@@ -16,6 +16,12 @@
     --cor2: #1C1A1B;
     --cor3: #E9E9E9;
     --fonte1: Inter, Arial, Helvetica, sans-serif;
+    --preto: #0f0f0f;
+    --branco: #ffffff;
+    --cinza-bg: #f7f7f7;
+    --cinza-texto: #555555;
+    --borda: rgba(0,0,0,0.1);
+    --sucesso: #239119;
 }
 
 html {
