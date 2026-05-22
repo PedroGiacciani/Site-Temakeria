@@ -13,7 +13,13 @@
     <ul id="lista-menu">
         <li><a href="#cardapio-ancora" onclick="mostrarCardapio()">Nossos produtos</a></li>
         <li><a href="#">Seus pedidos</a></li>
-        <li><a href="#">Sua conta</a></li>
+        <?php if ($usuario ?? null): ?>
+            <li><a href="#">Olá, <?= htmlspecialchars($usuario['nome']) ?></a></li>
+            <li><a href="logout.php">Sair</a></li>
+        <?php else: ?>
+            <li><a href="login.php">Entrar</a></li>
+            <li><a href="cadastro.php">Cadastrar</a></li>
+        <?php endif; ?>
         <li><a href="#">Sobre nós</a></li>
     </ul>
 </nav>

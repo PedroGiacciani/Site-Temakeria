@@ -210,25 +210,22 @@
    AJUSTE CIRÚRGICO DE LARGURA E FILTROS EM LANDSCAPE (CELULARES DEITADOS)
    ========================================================================== */
 @media screen and (orientation: landscape) and (max-width: 950px) {
-    
-    /* 1. Remove o travamento de altura do Pedro para permitir o scroll vertical suave */
-  
 
-    /* 2. Destrava a caixinha do Pedro para ocupar 100% da largura física da tela deitada */
+    /* 1. Destrava a caixinha do Pedro para ocupar 100% da largura física da tela deitada */
     #separador {
         width: 100% ;
         max-width: 100vw ;
         display: block ;
     }
 
-    /* 3. Garante que a área do conteúdo ocupe toda a horizontal disponível */
+    /* 2. Garante que a área do conteúdo ocupe toda a horizontal disponível */
     main {
         width: 100% !important;
         max-width: 100vw !important;
         padding: 0 10px ;
     }
 
-    /* 4. A MÁGICA DOS FILTROS: Em telas deitadas menores, mantém o scroll lateral 
+    /* 3. A MÁGICA DOS FILTROS: Em telas deitadas menores, mantém o scroll lateral 
           mas força o container a ir até a borda, matando o buraco lateral*/
     .filtros-cardapio-japa {
         display: flex ;

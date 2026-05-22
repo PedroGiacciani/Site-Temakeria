@@ -1,3 +1,9 @@
+<?php
+session_start();
+require_once 'db.php';
+
+$usuario = usuario_logado();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
