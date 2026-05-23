@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-  <div class="bg"></div>
+
   <div class="kanji-deco k1">新</div>
   <div class="kanji-deco k2">始</div>
 
