@@ -21,9 +21,11 @@ $usuario = usuario_logado();
         <header>
             <?php include("menu.php"); ?>
         </header>
+
         <main>
-           <?php include("cardapio.php"); ?>
+            
         </main>
+
     </div>
     <footer>
         <?php include("rodape.php"); ?>
