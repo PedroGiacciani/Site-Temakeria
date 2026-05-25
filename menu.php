@@ -12,7 +12,7 @@
 <nav id="menu">
     <i class="fa-solid fa-angle-down" onclick="toggleMenu()" id="icon"></i>
     <ul id="lista-menu">
-        <li><a href="#" onclick="mostrarCardapio(); return false;">Nossos produtos</a></li>
+        <li><a href="cardapio.php">Nossos produtos</a></li>
         <li><a href="#">Seus pedidos</a></li>
         <?php if ($usuario ?? null): ?>
             <li><a href="#">Olá, <?= htmlspecialchars($usuario['nome']) ?></a></li>

@@ -17,13 +17,16 @@ $usuario = usuario_logado();
     <script src="https://kit.fontawesome.com/52ff4c741b.js" crossorigin="anonymous"></script>
 
     <style>
-        section#intro{
+        body{
             background: black url("midias/foto-temaki-intro.jpg") center center fixed;
             background-size: cover;
+        }
+        section#intro{
             padding: 20px;
             width: 100% !important;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             height: 100%;
         }
@@ -58,7 +61,6 @@ $usuario = usuario_logado();
                     <h2>Notícias da Bia</h2>
                 </div>
             </section>
-           <?php include("cardapio.php"); ?>
         </main>
 
     </div>

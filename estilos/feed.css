@@ -236,26 +236,6 @@
     }
 }
 
-
-/* A Gaveta nasce escondida de fábrica */
-.gaveta-cardapio-japa {
-    display: none; /* Esconde o cardápio inicialmente */
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    width: 100%;
-}
-
-/* Quando o JS injetar o cardápio, podemos garantir que ele apareça */
-.gaveta-cardapio-japa.mostrar {
-    display: block; 
-    opacity: 1;
-}
-
-#container-cardapio-dinamico {
-    display: none; /* Inicia oculto */
-    width: 100%;
-}
-
 /* Quando a tela for larga (celular deitado ou tablet) */
 @media screen and (min-width: 600px) {
     .filtros-cardapio-japa {
