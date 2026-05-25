@@ -118,6 +118,4 @@ footer > p > a:hover{
 /* Garante que o main use todo o espaço liberado */
 main {
     width: 100% !important;
-    max-width: 1200px; 
-    margin: 0 auto !important;
 }
