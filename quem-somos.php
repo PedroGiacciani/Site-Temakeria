@@ -12,7 +12,6 @@
     <script src="https://kit.fontawesome.com/52ff4c741b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
     <div id="separador">
         <header>
             <?php include("menu.php"); ?>

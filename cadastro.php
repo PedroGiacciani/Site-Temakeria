@@ -54,6 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="estilos/layout.css">
 
 </head>
 
