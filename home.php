@@ -51,7 +51,7 @@ $usuario = usuario_logado();
                 </div>
                 <div class="conteudo">
                     <h2>Novo por aqui!?</h2>
-                    <p>Faça seu login para ter gerenciar seus pedidos e preferências</p>
+                    <p>Faça seu login para gerenciar seus pedidos e preferências</p>
                 </div>
                 <div class="conteudo">
                     <h2>Notícias da Bia</h2>
