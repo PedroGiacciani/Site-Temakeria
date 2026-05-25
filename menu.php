@@ -19,7 +19,6 @@
             <li><a href="logout.php">Sair</a></li>
         <?php else: ?>
             <li><a href="login.php">Entrar</a></li>
-            <li><a href="cadastro.php">Cadastrar</a></li>
         <?php endif; ?>
         <li><a href="quem-somos.php">Sobre nós</a></li>
     </ul>
