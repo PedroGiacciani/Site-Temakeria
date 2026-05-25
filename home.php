@@ -43,6 +43,7 @@ $usuario = usuario_logado();
         <header>
             <?php include("menu.php"); ?>
         </header>
+
         <main>
             <section id="intro">
                 <div class="conteudo">
@@ -59,6 +60,7 @@ $usuario = usuario_logado();
             </section>
            <?php include("cardapio.php"); ?>
         </main>
+
     </div>
     <footer>
         <?php include("rodape.php"); ?>
