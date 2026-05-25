@@ -17,9 +17,12 @@ $usuario = usuario_logado();
     <script src="https://kit.fontawesome.com/52ff4c741b.js" crossorigin="anonymous"></script>
 
     <style>
-        section#intro{
+        body{
             background: black url("midias/foto-temaki-intro.jpg") center center fixed;
             background-size: cover;
+        }
+        
+        section#intro{
             padding: 20px;
             width: 100vw !important;
             display: flex;
