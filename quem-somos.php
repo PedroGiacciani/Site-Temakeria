@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós - Temakeria da Bia</title>
     <link rel="stylesheet" href="estilos/about.css">
+    <link rel="stylesheet" href="estilos/main.css">
 </head>
 <body>
 
