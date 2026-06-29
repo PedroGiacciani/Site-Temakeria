@@ -11,11 +11,11 @@ Este repositório faz parte do projeto da matéria de **Projeto Integrado** do c
 
 ##  Funcionalidades e Design Visual
 
-O layout do site foi inteiramente planejado para oferecer uma experiência premium e fluida ao usuário, combinando sobriedade e forte apelo comercial[cite: 2]:
+O layout do site foi inteiramente planejado para oferecer uma experiência premium e fluida ao usuário, combinando sobriedade e forte apelo comercial:
 
 * **Paleta de Cores Premium:** Identidade visual moderna baseada nos tons Vermelho (`#BB1F20`) e Preto (`#1C1A1B`).
 * **Cardápio em Grid Responsivo:** Organização limpa dos produtos, facilitando a visualização dos itens em qualquer tamanho de tela.
-* **Navegação Inteligente por Filtros:** Implementação de scroll lateral para seleção rápida de categorias de pratos[cite: 2].
+* **Navegação Inteligente por Filtros:** Implementação de scroll lateral para seleção rápida de categorias de pratos.
 * **Otimização Mobile Eficiente:** Menu de navegação e cardápio com comportamento dinâmico e limpo para dispositivos móveis, sem sobrepor as seções institucionais.
 
 
