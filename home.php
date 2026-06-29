@@ -23,7 +23,7 @@ $usuario = usuario_logado();
         }
         section#intro{
             padding: 20px;
-            width: 100% !important;
+            width: 100% ;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -37,7 +37,7 @@ $usuario = usuario_logado();
             padding: 10px;
             text-align: center;
             margin: 20px 0px;
-            width: 450px;
+            max-width: 450px;
         }
     </style>
 </head>
