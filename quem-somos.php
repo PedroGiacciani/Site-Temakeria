@@ -41,7 +41,7 @@
         </div>
 
         <div class="sobre-imagem">
-            <img src="logo.png" alt="Logo Temakeria da Bia">
+            <img src="midias/logo-temakeria-bia.jpg" alt="Logo Temakeria da Bia">
         </div>
 
     </section>
